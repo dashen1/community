@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>发布- 元码社区</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/community.css"/>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" type="application/javascript" ></script>
+    <script src="/js/community.js" type="application/javascript" ></script>
+</head>
+<body>
+<div th:insert="~{navigation::nav}"></div>
+<div class="container-fluid main" >
+    <div class="row">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" >
+            <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>发起</h2>
+            <hr/>
+            <form action="/publish" method="post">
+                <input type="hidden" name="id" th:value="${id}">
+                <div class="form-group">
+                    <label for="title">问题标题（简明扼要）</label>
+                    <input type="text" class="form-control" id="title" name="title" th:value="${title}" placeholder="问题标题">
+                </div>
+                <div class="form-group">
+                    <label for="description">问题补充（必填，请参照提示）</label>
+                    <textarea class="form-control" id="description" name="description" th:text="${description}" rows="10" cols="30"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tag">添加标签</label>
+                    <input type="text" class="form-control" id="tag" name="tag" th:value="${tag}"
+                           autocomplete="off"
+                           onfocus="showPop()"
+                           placeholder="输入标签，以,分隔开">
+                </div>
+                <div id="select-tag" class="tag-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" th:each="selectCategory,selectCategoryState:${tagsTable}" th:class="${selectCategoryState.first ? 'active':''}">
+                            <a th:href="${'#'+selectCategory.categoryName}" aria-controls="home" role="tab" data-toggle="tab" th:text="${selectCategory.categoryName}"></a>
+                        </li>
+                    </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" th:id="${selectCategory.categoryName}"
+                         th:each="selectCategory,selectCategoryState:${tagsTable}"
+                         th:class="${selectCategoryState.first ? 'active tab-pane':'tab-pane'}">
+                        <span class=" lable label-info" th:each="selectTag:${selectCategory.tags}">
+                            <span class="glyphicon glyphicon-tags tag-info" onclick="selectTag(this)"
+                                    th:data-tag="${selectTag}" th:text="${' '+selectTag}"></span>
+                        </span>
+                    </div>
+                </div>
+                </div>
+
+                <div class="container-fluid main" >
+                    <div class="row">
+                        <div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12" th:text="${error}" th:if="${error != null}"></div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                            <button type="submit" class="btn btn-success btn-publish ">发布</button>
+                        </div>
+                        </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <h3>问题发起指南</h3>
+            · 问题标题 :2010 年，Elasticsearch 首个版本发布，经过近 10 年的发展，Elastic Stack 系列开源项目的热度持续升温，Elastic 技术社区的用户量和开发者群体逐步壮大，也在不断进化。那么，这个群体是谁？他们在怎样使用 Elastic Stack ？他们又将如何进阶成长？
+            · 问题补充 :为了洞察这个独特开发者群体的发展、技术应用现状，
+            · 选择标签 :以及整个行业的发展趋势，Elastic 技术社区、阿里巴巴 Elasticsearch 技术团队
+        </div>
+    </div>
+</div>
+</body>
+</html>

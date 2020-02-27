@@ -5,6 +5,7 @@ import life.yuanma.community.dto.AccessTokenDTO;
 import life.yuanma.community.dto.GithubUser;
 import life.yuanma.community.mapper.UserMapper;
 import life.yuanma.community.model.User;
+import life.yuanma.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -24,6 +25,9 @@ public class AuthorizeController {
     private GithubProvider githubProvider;
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private UserService userService;
 
     @Value("${github.client.id}")
     private String clientId;
@@ -49,7 +53,7 @@ public class AuthorizeController {
         GithubUser githubUser = githubProvider.getUser(accessToken);
         String name = githubUser.getName();
         System.out.println(name);
-        if (githubUser != null) {
+        if (githubUser != null && githubUser.getId() != null) {
             User user = new User();
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setName(githubUser.getName());
@@ -57,7 +61,8 @@ public class AuthorizeController {
             user.setToken(token);
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
-            userMapper.insert(user);
+            user.setAvatarUrl(githubUser.getAvatar_url());
+            userService.createOrUpdate(user);
             response.addCookie(new Cookie("token",token));
             //登录成功 设置cookies,session
             return "redirect:/";
@@ -65,5 +70,15 @@ public class AuthorizeController {
             //登录失败，重新登录
             return "redirect:/";
         }
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request,HttpServletResponse response){
+
+        request.getSession().removeAttribute("user");
+        Cookie cookies = new Cookie("token",null);
+        cookies.setMaxAge(0);
+        response.addCookie(cookies);
+        return "redirect:/";
     }
 }

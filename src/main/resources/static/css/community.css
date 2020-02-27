@@ -1,0 +1,103 @@
+body{
+    background-color: #efefef;
+}
+.main{
+    margin: 50px;
+    background-color: white;
+}
+.btn-publish{
+    float: right;
+    margin-bottom: 15px;
+}
+.tag-tab{
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.tag-tab .label-info{
+    white-space: normal;
+    margin: 5px 5px;
+    display: inline-block;
+}
+.tag-info{
+    margin: 5px;
+}
+.media-object{
+    width: 50px;
+    height: 50px;
+}
+.media-body{
+    margin-top: 10px;
+}
+.avatar-text{
+    font-size: 12px;
+    font-weight: normal;
+    color: #999999;
+}
+.question-edit{
+    color: #999999;
+    font-size: 14px;
+}
+.question-related{
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 0px;
+    list-style: none;
+    margin-bottom: 15px;
+    padding-left: 0px;
+}
+.jumbotron{
+    margin: 40px;
+}
+.comment{
+    margin: 10px 0px;
+}
+.btn-comment{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.question-hr{
+    margin-top: 0;
+}
+.question-edit{
+    /*display: block;*/
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+.question-title{
+    margin-top: 25px;
+}
+.question-tag{
+    margin-right: 5px;
+}
+.menu{
+    color: #999999;
+    margin-top: 5px;
+}
+.menu .icon{
+    margin-right: 6px;
+    font-size: 15px;
+}
+.menu .icon:hover{
+    color: #499ef3;
+}
+.menu .active{
+    color: #499ef3;
+}
+.comment-box{
+    margin-top: 10px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.sub-comments{
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #eeeeee;
+    padding-top: 10px;
+}
+.tag-tab{
+    display: none;
+    margin-top: 15px;
+}

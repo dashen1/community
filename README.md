@@ -19,3 +19,13 @@ create table USER
 
 
 ```
+##问题信息
+mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+ "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" 标红缺少包
+ <dependency>
+             <groupId>org.mybatis.generator</groupId>
+             <artifactId>mybatis-generator-core</artifactId>
+             <version>1.4.0</version>
+         </dependency>
+##
