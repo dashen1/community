@@ -7,6 +7,7 @@ import life.yuanma.community.mapper.UserMapper;
 import life.yuanma.community.model.User;
 import life.yuanma.community.service.NotificationService;
 import life.yuanma.community.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 @Controller
+@Slf4j
 public class AuthorizeController {
 
     @Autowired
@@ -76,6 +78,7 @@ public class AuthorizeController {
             return "redirect:/";
         }else{
             //登录失败，重新登录
+            log.error("get gitHub error,{}",githubUser);
             return "redirect:/";
         }
     }
