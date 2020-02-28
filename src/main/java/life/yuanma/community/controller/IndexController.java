@@ -1,6 +1,7 @@
 package life.yuanma.community.controller;
 
 import life.yuanma.community.dto.PaginationDTO;
+import life.yuanma.community.model.User;
 import life.yuanma.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,9 +18,11 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model,
                         @RequestParam(name = "page",defaultValue = "1") Integer page,
-                        @RequestParam(name = "size",defaultValue = "2") Integer size) {
-        PaginationDTO pagination = questionService.getList(page,size);
+                        @RequestParam(name = "size",defaultValue = "2") Integer size,
+                        @RequestParam(name = "search",required = false) String search) {
+        PaginationDTO pagination = questionService.getList(page,size,search);
         model.addAttribute("pagination",pagination);
+        model.addAttribute("search",search);
         return "index";
     }
 }

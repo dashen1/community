@@ -101,3 +101,7 @@ body{
     display: none;
     margin-top: 15px;
 }
+.footer{
+    padding: 15px 20px;
+    color: #666;
+}

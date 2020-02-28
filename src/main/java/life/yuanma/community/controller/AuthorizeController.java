@@ -1,14 +1,16 @@
 package life.yuanma.community.controller;
 
-import life.yuanma.community.controller.provider.GithubProvider;
+import life.yuanma.community.provider.GithubProvider;
 import life.yuanma.community.dto.AccessTokenDTO;
 import life.yuanma.community.dto.GithubUser;
 import life.yuanma.community.mapper.UserMapper;
 import life.yuanma.community.model.User;
+import life.yuanma.community.service.NotificationService;
 import life.yuanma.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -38,11 +40,14 @@ public class AuthorizeController {
     @Value("${github.redirect.uri}")
     private String redirectUri;
 
+    @Autowired
+    private NotificationService notificationService;
+
     @GetMapping("/callback")
     public String callback(@RequestParam(name = "code") String code,
                            @RequestParam(name = "state") String state,
                            HttpServletRequest request,
-                           HttpServletResponse response) throws IOException {
+                           HttpServletResponse response, Model model) throws IOException {
         AccessTokenDTO accessTokenDTO = new AccessTokenDTO();
         accessTokenDTO.setClient_id(clientId);
         accessTokenDTO.setClient_secret(clientSecret);
@@ -64,6 +69,9 @@ public class AuthorizeController {
             user.setAvatarUrl(githubUser.getAvatar_url());
             userService.createOrUpdate(user);
             response.addCookie(new Cookie("token",token));
+//            User userInfo = (User)request.getSession().getAttribute("user");
+//            Long unreadCount = notificationService.unreadCount(user.getId());
+//            model.addAttribute("unreadCount",unreadCount);
             //登录成功 设置cookies,session
             return "redirect:/";
         }else{

@@ -2,6 +2,7 @@ package life.yuanma.community.service;
 
 import life.yuanma.community.dto.PaginationDTO;
 import life.yuanma.community.dto.QuestionDTO;
+import life.yuanma.community.dto.QuestionQueryDTO;
 import life.yuanma.community.exception.CustomizedErrorCode;
 import life.yuanma.community.exception.CustomizedException;
 import life.yuanma.community.mapper.QuestionExtendMapper;
@@ -33,12 +34,22 @@ public class QuestionService {
     @Autowired
     private QuestionExtendMapper questionExtendMapper;
 
-    public PaginationDTO getList(Integer page, Integer size) {
+    public PaginationDTO getList(Integer page, Integer size, String search) {
 
-        PaginationDTO paginationDTO = new PaginationDTO();
+        if(!StringUtils.isEmpty(search)){
+            if (search.contains(" ")){
+                String[] tags = StringUtils.split(search," ");
+                search = Arrays.stream(tags).collect(Collectors.joining("|"));
+            }
+        }
+
+        PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO<>();
         Integer totalPage;
 //        Integer count = questionMapper.count();mybatis迁移
-        Integer count = (int)questionMapper.countByExample(new QuestionExample());
+//        Integer count = (int)questionMapper.countByExample(new QuestionExample());
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+        Integer count = questionExtendMapper.countBySearch(questionQueryDTO);
         if(count % size == 0){
             totalPage = count / size;
         }else{
@@ -51,11 +62,13 @@ public class QuestionService {
             page = totalPage;
         }
         paginationDTO.setPagination(totalPage,page);
-        QuestionExample questionExample = new QuestionExample();
-        questionExample.getOrderByClause("gmt_create desc");
+//        QuestionExample questionExample = new QuestionExample();
+//        questionExample.getOrderByClause("gmt_create desc");
         Integer offset = size*(page - 1);
 //        List<Question> questions = questionMapper.getList(offset,size);分页插件
-        List<Question> questions = questionMapper.selectByExampleWithBLOBsWithRowbounds(questionExample, new RowBounds(offset, size));
+        questionQueryDTO.setPage(page);
+        questionQueryDTO.setSize(offset);
+        List<Question> questions = questionExtendMapper.selectBySearch(questionQueryDTO);
 
         List<QuestionDTO> questionDTOList = new ArrayList<>();
         for (Question question : questions) {
@@ -66,12 +79,12 @@ public class QuestionService {
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
-        paginationDTO.setQuestionDTOS(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return  paginationDTO;
     }
 
     public PaginationDTO list(Long userId, Integer page, Integer size) {
-        PaginationDTO paginationDTO = new PaginationDTO();
+        PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO<>();
         Integer totalPage;
 //        Integer count = questionMapper.countById(userId);
         QuestionExample questionExample = new QuestionExample();
@@ -106,12 +119,11 @@ public class QuestionService {
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
-        paginationDTO.setQuestionDTOS(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return  paginationDTO;
     }
 
     public QuestionDTO getById(Long id) {
-//        Question question = questionMapper.getById(id);
         Question question = questionMapper.selectByPrimaryKey(id);
         if (question == null) {
             throw new CustomizedException(CustomizedErrorCode.QUESTION_NOT_FOUND);
@@ -119,7 +131,6 @@ public class QuestionService {
         QuestionDTO questionDTO = new QuestionDTO();
         BeanUtils.copyProperties(question,questionDTO);
         User user = userMapper.selectByPrimaryKey(question.getCreator());
-//        User user = userMapper.findById(question.getCreator());
         questionDTO.setUser(user);
         return questionDTO;
     }

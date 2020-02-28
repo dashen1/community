@@ -2,10 +2,13 @@ package life.yuanma.community.service;
 
 import life.yuanma.community.dto.CommentDTO;
 import life.yuanma.community.eunm.CommentTypeEunm;
+import life.yuanma.community.eunm.NotificationStatusEunm;
+import life.yuanma.community.eunm.NotificationTypeEunm;
 import life.yuanma.community.exception.CustomizedErrorCode;
 import life.yuanma.community.exception.CustomizedException;
 import life.yuanma.community.mapper.*;
 import life.yuanma.community.model.*;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,8 +37,11 @@ public class CommentService {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private NotificationMapper notificationMapper;
+
     @Transactional
-    public void insert(Comment comment) {
+    public void insert(Comment comment, User commentator) {
         if(comment.getParentId() == null || comment.getParentId() == 0){
             throw new CustomizedException(CustomizedErrorCode.TARGET_PARAM_NOT_FOUND);
         }
@@ -45,12 +51,14 @@ public class CommentService {
         }
         if(comment.getType() == CommentTypeEunm.COMMENT.getType()){
             //回复评论
-            CommentExample example = new CommentExample();
-            example.createCriteria().andParentIdEqualTo(comment.getParentId());
-            List<Comment> dbComment = commentMapper.selectByExample(example);
-//            Comment dbComment = commentMapper.selectByPrimaryKey(comment.getParentId());
+            Comment dbComment = commentMapper.selectByPrimaryKey(comment.getParentId());
             if(dbComment == null){
                 throw new CustomizedException(CustomizedErrorCode.COMMENT_NOT_FIND);
+            }
+            //回复问题
+            Question question = questionMapper.selectByPrimaryKey(dbComment.getParentId());
+            if(question == null){
+                throw new CustomizedException(CustomizedErrorCode.QUESTION_NOT_FOUND);
             }
             commentMapper.insert(comment);
             //增加评论
@@ -58,6 +66,8 @@ public class CommentService {
             parentComment.setId(comment.getParentId());
             parentComment.setCommentCount(1);
             commentExtendMapper.incCommentCount(parentComment);
+            createNotify(comment, dbComment.getCommentator(), commentator.getName(), question.getTitle(), NotificationTypeEunm.REPLY_COMMENT, question.getId());
+//            notificationMapper.insert(notification);
         }else {
             //回复问题
              Question question = questionMapper.selectByPrimaryKey(comment.getParentId());
@@ -68,8 +78,29 @@ public class CommentService {
             commentMapper.insert(comment);
             question.setCommentCount(1);
             questionExtendMapper.incCommentCount(question);
+            //创建通知
+            createNotify(comment, question.getCreator(), commentator.getName(), question.getTitle(), NotificationTypeEunm.REPLY_QUESTION, question.getId());
+//            notificationMapper.insert(notification);
         }
      }
+
+    @NotNull
+    private void createNotify(Comment comment, Long receiver, String notifierName, String outerTitle, NotificationTypeEunm notificationTypeEunm, Long outerId) {
+        if(receiver.equals(comment.getCommentator())){
+            return;
+        }
+        Notification notification = new Notification();
+        notification.setGmtCreate(System.currentTimeMillis());
+        notification.setNotifier(comment.getCommentator());
+        notification.setOuterid(outerId);
+        notification.setReceiver(receiver);
+        notification.setStatus(NotificationStatusEunm.UNREAD.getStatus());
+        notification.setType(notificationTypeEunm.getType());
+        notification.setNotifierName(notifierName);
+        notification.setOuterTitle(outerTitle);
+        notificationMapper.insert(notification);
+//        return notification;
+    }
 
     public List<CommentDTO> listByTargetId(Long id, CommentTypeEunm type) {
         CommentExample commentExample = new CommentExample();

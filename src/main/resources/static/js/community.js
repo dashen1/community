@@ -7,7 +7,6 @@ function post() {
 
 
 function comment2(targetId,type,commentContent) {
-    console.log("dddd"+targetId);
     if(!commentContent){
         alert("评论内容不能为空!");
         return;

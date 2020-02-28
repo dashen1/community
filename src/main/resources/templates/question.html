@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/css/community.css"/>
+    <link rel="stylesheet" href="/css/editormd.preview.css"/>
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript" ></script>
     <script src="/js/community.js" type="application/javascript" ></script>
     <script src="/js/moment.js" type="application/javascript" ></script>
+    <script src="/js/editormd.min.js" type="application/javascript" ></script>
+    <script src="/js/lib/marked.min.js" type="application/javascript" ></script>
+    <script src="/js/lib/prettify.min.js" type="application/javascript" ></script>
 </head>
 <body>
 <div th:insert="~{navigation::nav}"></div>
@@ -24,7 +28,23 @@
                 阅读量:  <span th:text="${question.viewCount}"></span>
             </span>
             <hr>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${question.description}"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="question-view">
+                <textarea style="display:none;" th:text="${question.description}"></textarea>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    var testView = editormd.markdownToHTML("question-view", {
+                        width: "100%",
+                        height: 350,
+                        path: "/js/lib/",
+                        delay:0,
+                        watch:false,
+                        placeholder:"请输入描述内容...",
+                        emoji:true,
+
+                    });
+                });
+            </script>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <span class="label label-info question-tag" th:each="tag:${question.tag.split(',')}">
                     <span class="glyphicon glyphicon-tags"></span>
@@ -80,12 +100,12 @@
                         <div class="media-left">
                             <a href="#">
                                 <img class="media-object img-rounded"
-                                     th:src="${question.user.avatarUrl}"/>
+                                     th:src="${session.user !=null? session.user.avatarUrl:'/images/defaultHead.png'}"/>
                             </a>
                         </div>
                         <div class="media-body">
                             <h5 class="media-heading" >
-                                <span th:text="${question.user.name}"></span>
+                                <span th:text="${session.user !=null ? session.user.name :'未登录用户'}"></span>
                             </h5>
                         </div>
                     </div>
@@ -107,14 +127,14 @@
                     </div>
                 <div class="media-body">
                     <h5 class="media-heading" >
-                        <img src="../static/img/erCode.jpg" height="658" width="658"/><span th:text="${question.user.name}"></span>
+                        <img src="/images/defaultHead.png" />
                     </h5>
                 </div>
             </div>
                 <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"/>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h4>相关问题</h4>
-                    <div><img src="../static/img/erCode.jpg"/></div>
+                    <div><img src="../static/images/img/erCode.jpg"/></div>
                 </div>
                 <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"/>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -129,5 +149,6 @@
         </div>
     </div>
 </div>
+<div th:insert="~{footer::foot}"></div>
 </body>
 </html>

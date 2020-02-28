@@ -7,7 +7,9 @@ public enum CustomizedErrorCode implements CustomizedErrorCodeInterface{
     SERVER_ERROR(2004,"服务器异常！"),
     TYPE_PARAM_WRONG(2005,"评论类型错误或不存在"),
     COMMENT_NOT_FIND(2006,"你回复的评论不存在"),
-    CONTENT_IS_EMPTY(2007,"评论内容不能为空");
+    CONTENT_IS_EMPTY(2007,"评论内容不能为空"),
+    READ_NOTIFICATION_FAIL(2008,"查看信息失败"),
+    NOTIFICATION_NOT_FOUND(2009,"消息找不到了！");
     private String message;
     private Integer code;
     @Override
