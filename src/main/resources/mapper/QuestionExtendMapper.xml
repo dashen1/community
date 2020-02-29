@@ -29,7 +29,7 @@
     select * from QUESTION where id = #{id} and tag regexp #{tag}
   </select>
   <select id="countBySearch" parameterType="life.yuanma.community.dto.QuestionQueryDTO" resultType="java.lang.Integer">
-    select count(*) from QUESTION
+    select count(1) from QUESTION
     <where>
       <if test="search !=null">
         and title regexp #{search}
