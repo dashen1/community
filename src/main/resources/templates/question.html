@@ -90,9 +90,9 @@
                     </div>
                 </div>
             </div>
-            <h4 class="question-title">
-                提交回复
-            </h4>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4 class="question-title">提交回复</h4>
+            </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12"/>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comment_close">
@@ -109,8 +109,7 @@
                             </h5>
                         </div>
                     </div>
-                    <input type="hidden" id="question_id" th:value="${question.id}"/>
-                    <textarea class="form-control comment" rows="6" id="comment_content"></textarea>
+                    <textarea class="form-control comment" rows="9" id="comment_content"></textarea>
                     <button type="button" class="btn btn-success btn-comment" onclick="post()">回复</button>
                 </div>
             </div>
@@ -125,16 +124,17 @@
                                  th:src="${question.user.avatarUrl}"/>
                         </a>
                     </div>
+                    <input type="hidden" th:value="${question.id}"/>
                 <div class="media-body">
                     <h5 class="media-heading" >
-                        <img src="/images/defaultHead.png" />
+                        <span th:text="${question.user.name}"></span>
                     </h5>
                 </div>
             </div>
                 <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"/>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h4>相关问题</h4>
-                    <div><img src="/static/images/img/erCode.jpg"/></div>
+                    <h4>站长微信</h4>
+                    <img class="img-zhanzhang" src="/images/img/zhanzhang.jpg"/>
                 </div>
                 <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"/>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

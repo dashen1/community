@@ -34,13 +34,10 @@ body{
     font-weight: normal;
     color: #999999;
 }
-.question-edit{
-    color: #999999;
-    font-size: 14px;
-}
+
 .question-related{
     line-height: 20px;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 0px;
     list-style: none;
     margin-bottom: 15px;
@@ -61,8 +58,8 @@ body{
     margin-top: 0;
 }
 .question-edit{
-    /*display: block;*/
-    font-size: 10px;
+    font-size: 15px;
+    color: #999999;
     margin-bottom: 15px;
 }
 .question-title{
@@ -104,4 +101,8 @@ body{
 .footer{
     padding: 15px 20px;
     color: #666;
+}
+.img-zhanzhang{
+    width: 180px;
+    height: 180px;
 }
