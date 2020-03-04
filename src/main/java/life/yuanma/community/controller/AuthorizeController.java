@@ -71,9 +71,6 @@ public class AuthorizeController {
             user.setAvatarUrl(githubUser.getAvatar_url());
             userService.createOrUpdate(user);
             response.addCookie(new Cookie("token",token));
-//            User userInfo = (User)request.getSession().getAttribute("user");
-//            Long unreadCount = notificationService.unreadCount(user.getId());
-//            model.addAttribute("unreadCount",unreadCount);
             //登录成功 设置cookies,session
             return "redirect:/";
         }else{
