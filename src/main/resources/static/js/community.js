@@ -2,6 +2,7 @@
 function post() {
     var questionId = $("#question_id").val();
     var commentContent =$("#comment_content").val();
+    console.log(questionId);
     comment2(questionId,1,commentContent);
 }
 

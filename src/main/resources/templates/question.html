@@ -109,6 +109,7 @@
                             </h5>
                         </div>
                     </div>
+                    <input type="hidden" th:value="${question.id}" id="question_id"/>
                     <textarea class="form-control comment" rows="9" id="comment_content"></textarea>
                     <button type="button" class="btn btn-success btn-comment" onclick="post()">回复</button>
                 </div>
@@ -124,7 +125,6 @@
                                  th:src="${question.user.avatarUrl}"/>
                         </a>
                     </div>
-                    <input type="hidden" th:value="${question.id}"/>
                 <div class="media-body">
                     <h5 class="media-heading" >
                         <span th:text="${question.user.name}"></span>
