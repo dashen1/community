@@ -45,8 +45,6 @@ public class QuestionService {
 
         PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO<>();
         Integer totalPage;
-//        Integer count = questionMapper.count();mybatis迁移
-//        Integer count = (int)questionMapper.countByExample(new QuestionExample());
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
         questionQueryDTO.setSearch(search);
         Integer count = questionExtendMapper.countBySearch(questionQueryDTO);
@@ -62,17 +60,13 @@ public class QuestionService {
             page = totalPage;
         }
         paginationDTO.setPagination(totalPage,page);
-//        QuestionExample questionExample = new QuestionExample();
-//        questionExample.getOrderByClause("gmt_create desc");
         Integer offset = size*(page - 1);
-//        List<Question> questions = questionMapper.getList(offset,size);分页插件
         questionQueryDTO.setPage(page);
         questionQueryDTO.setSize(offset);
         List<Question> questions = questionExtendMapper.selectBySearch(questionQueryDTO);
 
         List<QuestionDTO> questionDTOList = new ArrayList<>();
         for (Question question : questions) {
-//            User user = userMapper.findById(question.getCreator());
             User user = userMapper.selectByPrimaryKey(question.getCreator());
             QuestionDTO questionDTO = new QuestionDTO();
             BeanUtils.copyProperties(question,questionDTO);
@@ -86,7 +80,6 @@ public class QuestionService {
     public PaginationDTO list(Long userId, Integer page, Integer size) {
         PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO<>();
         Integer totalPage;
-//        Integer count = questionMapper.countById(userId);
         QuestionExample questionExample = new QuestionExample();
         questionExample.createCriteria()
                 .andCreatorEqualTo(userId);
@@ -104,7 +97,6 @@ public class QuestionService {
         }
         paginationDTO.setPagination(totalPage,page);
         Integer offset = size*(page - 1);
-//        List<Question> questions = questionMapper.list(userId,offset,size);
         QuestionExample questionExample1 = new QuestionExample();
         questionExample.createCriteria()
                 .andCreatorEqualTo(userId);
@@ -112,7 +104,6 @@ public class QuestionService {
 
         List<QuestionDTO> questionDTOList = new ArrayList<>();
         for (Question question : questions) {
-//            User user = userMapper.findById(question.getCreator());
             User user = userMapper.selectByPrimaryKey(question.getCreator());
             QuestionDTO questionDTO = new QuestionDTO();
             BeanUtils.copyProperties(question,questionDTO);
@@ -158,7 +149,6 @@ public class QuestionService {
             if(update != 1){
                 throw new CustomizedException(CustomizedErrorCode.QUESTION_NOT_FOUND);
             }
-//            questionMapper.update(question);
         }
     }
 

@@ -34,4 +34,9 @@ mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 mvn clean package -DskipTests
 java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
 这样maven就不会进行Test相关的编译了。
+netstat -ntlp   //查看当前所有tcp端口
+netstat -ntulp | grep 80   //查看所有80端口使用情况
+netstat -ntulp | grep 3306   //查看所有3306端口使用情况
+传输文件
+
 ##

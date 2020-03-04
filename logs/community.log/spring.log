@@ -5,3 +5,316 @@
 2020-03-04 09:13:02.268  INFO 5228 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2020-03-04 09:13:04.778  INFO 5228 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 12.07 seconds (JVM running for 14.866)
 2020-03-04 09:13:06.037  INFO 5228 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 09:21:10.184  INFO 14488 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 14488 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 09:21:10.256  INFO 14488 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 09:21:10.387  INFO 14488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 09:21:10.389  INFO 14488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 09:21:10.515  WARN 14488 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 09:21:12.511  INFO 14488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-03-04 09:21:12.530  INFO 14488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 09:21:12.531  INFO 14488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 09:21:12.881  INFO 14488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 09:21:12.883  INFO 14488 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2491 ms
+2020-03-04 09:21:12.956  INFO 14488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 09:21:13.256  INFO 14488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 09:21:13.269  INFO 14488 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 09:21:14.328  INFO 14488 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 09:21:14.409  INFO 14488 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 09:21:14.912  INFO 14488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 09:21:14.989  INFO 14488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-03-04 09:21:14.993  INFO 14488 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 5.703 seconds (JVM running for 8.975)
+2020-03-04 09:21:28.871  INFO 14488 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 09:21:28.880  INFO 14488 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 09:21:28.903  INFO 14488 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-03-04 10:26:37.514  INFO 9332 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 9332 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 10:26:37.524  INFO 9332 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 10:26:38.632  WARN 9332 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 10:26:44.675  INFO 9332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 10:26:44.935  INFO 9332 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 10:26:45.805  INFO 9332 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 9.526 seconds (JVM running for 13.035)
+2020-03-04 10:26:46.446  INFO 9332 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 10:46:53.635  INFO 2368 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 2368 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 10:46:53.642  INFO 2368 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 10:46:54.599  WARN 2368 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 10:46:59.479  INFO 2368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 10:46:59.822  INFO 2368 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 10:47:00.774  INFO 2368 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.843 seconds (JVM running for 10.666)
+2020-03-04 10:47:01.680  INFO 2368 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:18:01.764  INFO 516 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 516 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 11:18:01.767  INFO 516 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 11:18:01.872  INFO 516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 11:18:01.872  INFO 516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 11:18:01.948  WARN 516 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 11:18:04.834  INFO 516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-03-04 11:18:04.856  INFO 516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 11:18:04.857  INFO 516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 11:18:05.164  INFO 516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 11:18:05.164  INFO 516 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3291 ms
+2020-03-04 11:18:05.215  INFO 516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 11:18:05.527  INFO 516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 11:18:05.562  INFO 516 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 11:18:06.829  INFO 516 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:18:06.919  INFO 516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 11:18:07.615  INFO 516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 11:18:07.688  INFO 516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-03-04 11:18:07.694  INFO 516 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.775 seconds (JVM running for 9.407)
+2020-03-04 11:18:22.999  INFO 516 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 11:18:22.999  INFO 516 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 11:18:23.009  INFO 516 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-04 11:31:15.630  INFO 4892 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 4892 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 11:31:15.634  INFO 4892 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 11:31:16.155  WARN 4892 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 11:31:20.975  INFO 4892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:31:21.241  INFO 4892 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 11:31:22.206  INFO 4892 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.223 seconds (JVM running for 9.807)
+2020-03-04 11:31:22.839  INFO 4892 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:43:27.357  INFO 3588 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 3588 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 11:43:27.363  INFO 3588 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 11:43:27.904  WARN 3588 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 11:43:32.907  INFO 3588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:43:33.187  INFO 3588 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 11:43:34.147  INFO 3588 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.398 seconds (JVM running for 9.683)
+2020-03-04 11:43:34.751  INFO 3588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:44:54.201  INFO 8012 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 8012 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 11:44:54.211  INFO 8012 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 11:44:54.675  WARN 8012 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 11:44:58.357  INFO 8012 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:44:58.579  INFO 8012 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 11:44:59.376  INFO 8012 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 5.721 seconds (JVM running for 7.789)
+2020-03-04 11:44:59.918  INFO 8012 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:50:25.460  INFO 8164 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 8164 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 11:50:25.460  INFO 8164 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 11:50:26.268  WARN 8164 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 11:50:30.654  INFO 8164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:50:30.986  INFO 8164 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 11:50:31.934  INFO 8164 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.062 seconds (JVM running for 9.386)
+2020-03-04 11:50:32.610  INFO 8164 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:52:38.921  INFO 3632 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 3632 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 11:52:38.937  INFO 3632 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 11:52:39.402  WARN 3632 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 11:52:43.822  INFO 3632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 11:52:44.082  INFO 3632 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 11:52:44.873  INFO 3632 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 6.54 seconds (JVM running for 8.911)
+2020-03-04 11:52:45.475  INFO 3632 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 12:47:09.090  INFO 452 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 452 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 12:47:09.090  INFO 452 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 12:47:09.241  INFO 452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 12:47:09.241  INFO 452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 12:47:09.291  WARN 452 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 12:47:11.704  INFO 452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-03-04 12:47:11.719  INFO 452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 12:47:11.719  INFO 452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 12:47:12.004  INFO 452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 12:47:12.004  INFO 452 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2763 ms
+2020-03-04 12:47:12.105  INFO 452 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 12:47:12.336  INFO 452 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 12:47:12.343  INFO 452 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 12:47:13.538  INFO 452 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 12:47:13.607  INFO 452 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 12:47:14.640  INFO 452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 12:47:14.709  INFO 452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-03-04 12:47:14.709  INFO 452 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.806 seconds (JVM running for 9.931)
+2020-03-04 12:47:41.657  INFO 452 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 12:47:41.658  INFO 452 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 12:47:41.667  INFO 452 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-03-04 13:01:10.300  INFO 11784 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 11784 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 13:01:10.303  INFO 11784 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 13:01:10.428  INFO 11784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 13:01:10.429  INFO 11784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 13:01:10.498  WARN 11784 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 13:01:13.596  INFO 11784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-03-04 13:01:13.609  INFO 11784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 13:01:13.610  INFO 11784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 13:01:13.912  INFO 11784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 13:01:13.912  INFO 11784 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3483 ms
+2020-03-04 13:01:13.984  INFO 11784 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 13:01:14.243  INFO 11784 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 13:01:14.251  INFO 11784 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 13:01:15.688  INFO 11784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 13:01:15.877  INFO 11784 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 13:01:17.028  INFO 11784 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 13:01:17.170  INFO 11784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-03-04 13:01:17.175  INFO 11784 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 8.226 seconds (JVM running for 11.725)
+2020-03-04 13:01:34.623  INFO 11784 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 13:01:34.624  INFO 11784 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 13:01:34.639  INFO 11784 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-03-04 13:08:08.557  INFO 8068 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 8068 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 13:08:08.560  INFO 8068 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 13:08:08.676  INFO 8068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 13:08:08.677  INFO 8068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 13:08:08.742  WARN 8068 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 13:08:11.356  INFO 8068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-03-04 13:08:11.367  INFO 8068 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 13:08:11.368  INFO 8068 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 13:08:11.685  INFO 8068 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 13:08:11.685  INFO 8068 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3008 ms
+2020-03-04 13:08:11.758  INFO 8068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 13:08:12.037  INFO 8068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 13:08:12.047  INFO 8068 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 13:08:13.289  INFO 8068 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 13:08:13.386  INFO 8068 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 13:08:13.920  INFO 8068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 13:08:14.175  INFO 8068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-03-04 13:08:14.186  INFO 8068 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.942 seconds (JVM running for 10.349)
+2020-03-04 13:08:31.117  INFO 8068 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 13:08:31.117  INFO 8068 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 13:08:31.128  INFO 8068 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-04 13:08:36.631  WARN 8068 --- [http-nio-8886-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /images/defaultHead.png
+2020-03-04 13:08:36.883  WARN 8068 --- [http-nio-8886-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /images/defaultHead.png
+2020-03-04 13:10:36.776  INFO 16544 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 16544 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 13:10:36.781  INFO 16544 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 13:10:37.346  WARN 16544 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 13:10:41.765  INFO 16544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 13:10:42.014  INFO 16544 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 13:10:42.777  INFO 16544 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 6.652 seconds (JVM running for 9.401)
+2020-03-04 13:10:43.470  INFO 16544 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 13:17:38.975  INFO 12512 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 12512 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 13:17:38.982  INFO 12512 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 13:17:39.547  WARN 12512 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 13:17:44.575  INFO 12512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 13:17:44.823  INFO 12512 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 13:17:45.694  INFO 12512 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.331 seconds (JVM running for 9.564)
+2020-03-04 13:17:46.487  INFO 12512 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 13:45:08.924  INFO 7284 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 7284 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 13:45:08.927  INFO 7284 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 13:45:09.119  INFO 7284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 13:45:09.120  INFO 7284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 13:45:09.310  WARN 7284 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 13:45:11.398  INFO 7284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-04 13:45:11.418  INFO 7284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 13:45:11.419  INFO 7284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 13:45:11.731  INFO 7284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 13:45:11.731  INFO 7284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2611 ms
+2020-03-04 13:45:11.796  INFO 7284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 13:45:12.070  INFO 7284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 13:45:12.126  INFO 7284 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 13:45:13.434  INFO 7284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 13:45:13.533  INFO 7284 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 13:45:14.079  INFO 7284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 13:45:14.151  INFO 7284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-04 13:45:14.158  INFO 7284 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.017 seconds (JVM running for 9.461)
+2020-03-04 13:45:56.416  INFO 7284 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 13:45:56.417  INFO 7284 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 13:45:56.433  INFO 7284 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-03-04 13:45:58.037  WARN 7284 --- [http-nio-80-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2020-03-04 13:45:59.829  WARN 7284 --- [http-nio-80-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/defaultHead.png
+2020-03-04 13:46:00.059  WARN 7284 --- [http-nio-80-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /images/defaultHead.png
+2020-03-04 14:07:27.970  INFO 5544 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 5544 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 14:07:27.973  INFO 5544 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 14:07:28.090  INFO 5544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 14:07:28.090  INFO 5544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 14:07:28.102  WARN 5544 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 14:07:30.840  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8886 (http)
+2020-03-04 14:07:30.851  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 14:07:30.852  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 14:07:31.183  INFO 5544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 14:07:31.183  INFO 5544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3093 ms
+2020-03-04 14:07:31.259  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 14:07:31.587  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 14:07:31.597  INFO 5544 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 14:07:33.639  INFO 5544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:07:33.725  INFO 5544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 14:07:34.368  INFO 5544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 14:07:34.451  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8886 (http) with context path ''
+2020-03-04 14:07:34.455  INFO 5544 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 7.924 seconds (JVM running for 11.277)
+2020-03-04 14:07:46.918  INFO 5544 --- [http-nio-8886-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 14:07:46.918  INFO 5544 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 14:07:46.932  INFO 5544 --- [http-nio-8886-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-03-04 14:28:12.717  INFO 6664 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 6664 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 14:28:12.725  INFO 6664 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 14:28:13.560  WARN 6664 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 14:28:18.228  INFO 6664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:28:18.526  INFO 6664 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 14:28:19.562  INFO 6664 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.581 seconds (JVM running for 10.147)
+2020-03-04 14:28:20.430  INFO 6664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:34:28.163  INFO 13756 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 13756 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 14:34:28.169  INFO 13756 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 14:34:28.827  WARN 13756 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 14:34:33.567  INFO 13756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:34:33.814  INFO 13756 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 14:34:34.691  INFO 13756 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.322 seconds (JVM running for 10.431)
+2020-03-04 14:34:35.494  INFO 13756 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:50:09.841  INFO 16288 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 16288 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 14:50:09.846  INFO 16288 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 14:50:10.492  WARN 16288 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 14:50:15.793  INFO 16288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:50:16.169  INFO 16288 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 14:50:17.281  INFO 16288 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 8.18 seconds (JVM running for 11.149)
+2020-03-04 14:50:17.850  INFO 16288 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:50:53.542  INFO 7660 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 7660 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 14:50:53.546  INFO 7660 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 14:50:53.770  INFO 7660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 14:50:53.770  INFO 7660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 14:50:53.813  WARN 7660 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 14:50:58.040  INFO 7660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-04 14:50:58.241  INFO 7660 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 14:50:58.242  INFO 7660 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 14:50:58.672  INFO 7660 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 14:50:58.672  INFO 7660 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4902 ms
+2020-03-04 14:50:58.750  INFO 7660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 14:50:59.205  INFO 7660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 14:50:59.219  INFO 7660 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 14:51:00.361  INFO 7660 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 14:51:00.467  INFO 7660 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 14:51:00.993  INFO 7660 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 14:51:01.091  INFO 7660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-04 14:51:01.098  INFO 7660 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 8.519 seconds (JVM running for 11.691)
+2020-03-04 14:51:08.071  INFO 7660 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 14:51:08.072  INFO 7660 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 14:51:08.090  INFO 7660 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-03-04 16:18:04.094  INFO 668 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 668 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 16:18:04.176  INFO 668 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 16:18:04.974  WARN 668 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 16:18:09.666  INFO 668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 16:18:09.868  INFO 668 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 16:18:10.752  INFO 668 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 7.323 seconds (JVM running for 10.993)
+2020-03-04 16:18:11.337  INFO 668 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 16:34:10.245  INFO 18140 --- [main] l.y.community.CommunityApplicationTests  : Starting CommunityApplicationTests on DESKTOP-PNM6FJF with PID 18140 (started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 16:34:10.250  INFO 18140 --- [main] l.y.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2020-03-04 16:34:10.861  WARN 18140 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 16:34:16.062  INFO 18140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 16:34:16.320  INFO 18140 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 16:34:18.070  INFO 18140 --- [main] l.y.community.CommunityApplicationTests  : Started CommunityApplicationTests in 8.415 seconds (JVM running for 11.093)
+2020-03-04 16:34:18.762  INFO 18140 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-04 16:41:34.080  INFO 13632 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 13632 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 16:41:34.085  INFO 13632 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 16:41:34.300  INFO 13632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 16:41:34.300  INFO 13632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 16:41:34.505  WARN 13632 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 16:41:37.468  INFO 13632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-04 16:41:37.483  INFO 13632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 16:41:37.485  INFO 13632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 16:41:37.821  INFO 13632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 16:41:37.822  INFO 13632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3522 ms
+2020-03-04 16:41:37.900  INFO 13632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 16:41:38.232  INFO 13632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 16:41:38.242  INFO 13632 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 16:41:39.934  INFO 13632 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 16:41:40.110  INFO 13632 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 16:41:40.959  INFO 13632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 16:41:41.100  INFO 13632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-04 16:41:41.109  INFO 13632 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 8.034 seconds (JVM running for 11.569)
+2020-03-04 16:41:54.855  INFO 13632 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 16:41:54.856  INFO 13632 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 16:41:54.870  INFO 13632 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-03-04 16:43:02.497  INFO 3060 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 3060 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 16:43:02.500  INFO 3060 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 16:43:02.695  INFO 3060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 16:43:02.696  INFO 3060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 16:43:02.721  WARN 3060 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 16:43:05.572  INFO 3060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-04 16:43:05.591  INFO 3060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 16:43:05.592  INFO 3060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 16:43:05.946  INFO 3060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 16:43:05.947  INFO 3060 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3251 ms
+2020-03-04 16:43:06.027  INFO 3060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 16:43:06.381  INFO 3060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 16:43:06.391  INFO 3060 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 16:43:08.423  INFO 3060 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 16:43:08.520  INFO 3060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 16:43:09.052  INFO 3060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 16:43:09.120  INFO 3060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-04 16:43:09.124  INFO 3060 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 7.504 seconds (JVM running for 10.396)
+2020-03-04 16:44:13.066  INFO 3060 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 16:44:13.066  INFO 3060 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 16:44:13.079  INFO 3060 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
