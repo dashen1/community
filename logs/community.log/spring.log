@@ -796,3 +796,60 @@ Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-
 2020-03-04 19:19:07.258  INFO 1252 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-03-04 19:19:07.258  INFO 1252 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-03-04 19:19:07.276  INFO 1252 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-03-04 19:44:10.089  INFO 2140 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 2140 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 19:44:10.093  INFO 2140 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 19:44:10.246  INFO 2140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 19:44:10.246  INFO 2140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 19:44:10.309  WARN 2140 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 19:44:13.094  INFO 2140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-04 19:44:13.107  INFO 2140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 19:44:13.107  INFO 2140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 19:44:13.407  INFO 2140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 19:44:13.408  INFO 2140 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3161 ms
+2020-03-04 19:44:13.470  INFO 2140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 19:44:13.773  INFO 2140 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 19:44:13.786  INFO 2140 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 19:44:15.032  INFO 2140 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 19:44:15.184  INFO 2140 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 19:44:16.016  INFO 2140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 19:44:16.120  INFO 2140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-04 19:44:16.126  INFO 2140 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 7.014 seconds (JVM running for 10.324)
+2020-03-04 19:45:08.405  INFO 2140 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 19:45:08.406  INFO 2140 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 19:45:08.421  INFO 2140 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-03-04 19:45:09.754  WARN 2140 --- [http-nio-80-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/bootstrap.min.css
+2020-03-04 19:45:09.760  WARN 2140 --- [http-nio-80-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/editormd.min.css
+2020-03-04 19:45:09.769  WARN 2140 --- [http-nio-80-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/bootstrap-theme.min.css
+2020-03-04 19:45:09.773  WARN 2140 --- [http-nio-80-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /js/bootstrap.min.js
+2020-03-04 19:45:09.776  WARN 2140 --- [http-nio-80-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/community.css
+2020-03-04 19:45:09.778  WARN 2140 --- [http-nio-80-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /js/jquery-3.4.1.min.js
+2020-03-04 19:45:09.868  WARN 2140 --- [http-nio-80-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /js/community.js
+2020-03-04 19:45:09.877  WARN 2140 --- [http-nio-80-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /js/plugins/emoji-dialog/emoji-dialog.js
+2020-03-04 19:45:09.904  WARN 2140 --- [http-nio-80-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /js/plugins/image-dialog/image-dialog.js
+2020-03-04 19:45:09.904  WARN 2140 --- [http-nio-80-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /js/editormd.min.js
+2020-03-04 19:45:09.926  WARN 2140 --- [http-nio-80-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /js/bootstrap.min.js
+2020-03-04 19:45:09.977  WARN 2140 --- [http-nio-80-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /js/community.js
+2020-03-04 19:45:10.012  WARN 2140 --- [http-nio-80-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /js/plugins/emoji-dialog/emoji-dialog.js
+2020-03-04 19:45:10.052  WARN 2140 --- [http-nio-80-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /js/plugins/image-dialog/image-dialog.js
+2020-03-04 19:45:10.088  WARN 2140 --- [http-nio-80-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /js/editormd.min.js
+2020-03-04 19:45:58.740  INFO 4364 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 4364 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-04 19:45:58.742  INFO 4364 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-04 19:45:58.893  INFO 4364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-04 19:45:58.894  INFO 4364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-04 19:45:58.951  WARN 4364 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-04 19:46:02.354  INFO 4364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-04 19:46:02.380  INFO 4364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-04 19:46:02.380  INFO 4364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-04 19:46:02.673  INFO 4364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-04 19:46:02.674  INFO 4364 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3780 ms
+2020-03-04 19:46:02.755  INFO 4364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-04 19:46:02.995  INFO 4364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-04 19:46:03.001  INFO 4364 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-04 19:46:04.502  INFO 4364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-04 19:46:04.643  INFO 4364 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-04 19:46:05.234  INFO 4364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-04 19:46:05.353  INFO 4364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-04 19:46:05.359  INFO 4364 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 7.429 seconds (JVM running for 10.405)
+2020-03-04 19:46:37.034  INFO 4364 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-04 19:46:37.034  INFO 4364 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-04 19:46:37.046  INFO 4364 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
