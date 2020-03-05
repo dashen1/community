@@ -46,4 +46,9 @@ git reset --hard origin/master  //把HEAD指向最新下载的版本
 [error: Your local changes to the following files would be overwritten by merge:
  	logs/community.log/spring.log
  Please, commit your changes or stash them before you can merge.]
+ 
+ Mysql数据库迁移
+ 大小写问题
+ 
+ ctrl+alt+u大写变小写
 ##

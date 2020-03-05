@@ -41,6 +41,7 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.62</version>
         </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -101,11 +102,20 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>6.2.3</version>
                 <configuration>
-                    <url>jdbc:h2:~/community1</url>
-                    <user>sa</user>
-                    <password>123</password>
+<!--                    h2数据库配置-->
+<!--                    <url>jdbc:h2:~/community1</url>-->
+<!--                    <user>sa</user>-->
+<!--                    <password>123</password>-->
+                    <url>jdbc:mysql://47.104.62.60:3306/maven</url>
+                    <user>root</user>
+                    <password>Root@123456</password>
                 </configuration>
                 <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>8.0.19</version>
+                    </dependency>
                     <dependency>
                         <groupId>com.h2database</groupId>
                         <artifactId>h2</artifactId>
