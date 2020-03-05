@@ -49,6 +49,7 @@ git reset --hard origin/master  //把HEAD指向最新下载的版本
  
  Mysql数据库迁移
  大小写问题
- 
  ctrl+alt+u大写变小写
+ v5__-- alter table USER alter column AVATAR rename to AVATAR_URL;
+ alter table USER change AVATAR AVATAR_URL VARCHAR (150);
 ##
