@@ -17,6 +17,20 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+<!--线上配置-->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <db.url>jdbc:h2:~/community1</db.url>
+                <db.user>sa</db.user>
+                <db.password>123</db.password>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
     <dependencies>
         <dependency>
@@ -110,9 +124,9 @@
 <!--                    <url>jdbc:h2:~/community1</url>-->
 <!--                    <user>sa</user>-->
 <!--                    <password>123</password>-->
-                    <url>jdbc:mysql://rm-2zehw066ml2180ewq.mysql.rds.aliyuncs.com:3306/maven</url>
-                    <user>root</user>
-                    <password>root@123456</password>
+                    <url>${db.url}</url>
+                    <user>${db.user}</user>
+                    <password>${db.password}</password>
                 </configuration>
                 <dependencies>
                     <dependency>

@@ -55,4 +55,39 @@ git reset --hard origin/master  //把HEAD指向最新下载的版本
  alter table QUESTION modify CREATOR bigint NOT NULL;
  alter table COMMENT modify COMMENTATOR bigint NOT NULL;
  只能有一个自增列ID
+ 
+ mvn clean compile flyway:migrate -Pdev
+     <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                           https://maven.apache.org/xsd/settings-1.0.0.xsd">
+       <localRepository/>
+       <interactiveMode/>
+       <offline/>
+       <pluginGroups/>
+       <servers/>
+       <mirrors/>
+       <proxies/>
+       <profiles>
+               <profile>
+                   <id>dev</id>
+                   <properties>
+                       <db.url>jdbc:h2:~/community1</db.url>
+                       <db.user>sa</db.user>
+                       <db.password>123</db.password>
+                   </properties>
+                   <activation>
+                       <activeByDefault>true</activeByDefault>
+                   </activation>
+               </profile><profile>
+                   <id>production</id>
+                   <properties>
+                       <db.url>jdbc:mysql://rm-2zehw066ml2180ewq.mysql.rds.aliyuncs.com:3306/maven</db.url>
+                       <db.user>root</db.user>
+                       <db.password>root@123456</db.password>
+                   </properties>
+               </profile>
+           </profiles>
+       <activeProfiles/>
+     </settings>
 ##
