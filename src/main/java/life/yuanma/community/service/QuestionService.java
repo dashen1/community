@@ -60,7 +60,7 @@ public class QuestionService {
             page = totalPage;
         }
         paginationDTO.setPagination(totalPage,page);
-        Integer offset = size*(page - 1);
+        Integer offset = page <1?0:size*(page - 1);
         questionQueryDTO.setPage(page);
         questionQueryDTO.setSize(offset);
         List<Question> questions = questionExtendMapper.selectBySearch(questionQueryDTO);
