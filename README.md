@@ -52,4 +52,7 @@ git reset --hard origin/master  //把HEAD指向最新下载的版本
  ctrl+alt+u大写变小写
  v5__-- alter table USER alter column AVATAR rename to AVATAR_URL;
  alter table USER change AVATAR AVATAR_URL VARCHAR (150);
+ alter table QUESTION modify CREATOR bigint NOT NULL;
+ alter table COMMENT modify COMMENTATOR bigint NOT NULL;
+ 只能有一个自增列ID
 ##
