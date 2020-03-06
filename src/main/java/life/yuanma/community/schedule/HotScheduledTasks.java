@@ -12,10 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Component
 @Slf4j
@@ -27,19 +24,26 @@ public class HotScheduledTasks {
     @Autowired
     private QuestionMapper questionMapper;
 
+    @Autowired
+    private HotTagCache hotTagCache;
+
     @Scheduled(fixedRate = 10000)
 //    @Scheduled(cron = "0 0 1 * * *")//每天1点计算
     public void reportCurrentTime() {
         int offset = 0;
-        int limit = 2;
+        int limit = 5;
         log.info("The time is start{}", new Date());
         List<Question> list = new ArrayList<>();
+        Map<String, Integer> tagsMap = new HashMap<>();
         while( offset == 0 || list.size() ==limit){
             list = questionMapper.selectByExampleWithRowbounds(new QuestionExample(),new RowBounds(offset,limit));
             for (Question question :list) {
-                Map<String, Integer> tagsMap = HotTagCache.getTags();
                 String questionTag = question.getTag();
-                String[] tags = StringUtils.split(questionTag, ",");
+                String[] tags = new String[]{questionTag};
+                if(questionTag.contains(",")){
+                     tags = StringUtils.split(questionTag, ",");
+                }
+
                     for (String tag : tags) {
                     Integer priority = tagsMap.get(tag);
                     if(priority != null){
@@ -52,7 +56,8 @@ public class HotScheduledTasks {
             }
             offset += limit;
         }
-        HotTagCache.getTags().forEach(
+        hotTagCache.setTags(tagsMap);
+        hotTagCache.getTags().forEach(
                 (k,v) -> {
                     System.out.print(k);
                     System.out.print(":");
@@ -60,6 +65,7 @@ public class HotScheduledTasks {
                     System.out.println();
                 }
     );
+        hotTagCache.updateTags(tagsMap);
         log.info("The time is stop {}", new Date());
     }
 }

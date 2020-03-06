@@ -1279,3 +1279,1421 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
 
+2020-03-06 13:14:25.852  INFO 13252 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 13252 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 13:14:25.893  INFO 13252 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 13:14:26.023  INFO 13252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 13:14:26.023  INFO 13252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 13:14:26.054  WARN 13252 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 13:14:28.968  INFO 13252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 13:14:28.982  INFO 13252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 13:14:28.982  INFO 13252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 13:14:29.293  INFO 13252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 13:14:29.293  INFO 13252 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3269 ms
+2020-03-06 13:14:29.362  INFO 13252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 13:14:29.645  INFO 13252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 13:14:29.656  INFO 13252 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 13:14:31.567  INFO 13252 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 13:14:31.734  INFO 13252 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 13:14:32.136  INFO 13252 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 13:14:32.489  INFO 13252 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 13:14:32.535  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:14:32 CST 2020
+2020-03-06 13:14:32.572  INFO 13252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 13:14:32.576  INFO 13252 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 7.93 seconds (JVM running for 11.732)
+2020-03-06 13:14:32.627 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:14:42.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:14:42 CST 2020
+2020-03-06 13:14:42.541 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:14:52.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:14:52 CST 2020
+2020-03-06 13:14:52.545 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:15:02.535  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:15:02 CST 2020
+2020-03-06 13:15:02.543 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:15:02.995  INFO 13252 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 13:15:02.996  INFO 13252 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 13:15:03.007  INFO 13252 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-06 13:15:12.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:15:12 CST 2020
+2020-03-06 13:15:12.538 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:15:22.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:15:22 CST 2020
+2020-03-06 13:15:22.538 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:15:32.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:15:32 CST 2020
+2020-03-06 13:15:32.537 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:15:42.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:15:42 CST 2020
+2020-03-06 13:15:42.539 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:15:52.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:15:52 CST 2020
+2020-03-06 13:15:52.537 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:16:02.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:16:02 CST 2020
+2020-03-06 13:16:02.538 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:16:12.538  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:16:12 CST 2020
+2020-03-06 13:16:12.541 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:16:22.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:16:22 CST 2020
+2020-03-06 13:16:22.539 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:16:32.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:16:32 CST 2020
+2020-03-06 13:16:32.537 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:16:42.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:16:42 CST 2020
+2020-03-06 13:16:42.539 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:16:52.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:16:52 CST 2020
+2020-03-06 13:16:52.538 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:17:02.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:17:02 CST 2020
+2020-03-06 13:17:02.540 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:17:12.536  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:17:12 CST 2020
+2020-03-06 13:17:12.539 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:17:22.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:17:22 CST 2020
+2020-03-06 13:17:22.539 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:17:32.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:17:32 CST 2020
+2020-03-06 13:17:32.539 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:17:42.537  INFO 13252 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:17:42 CST 2020
+2020-03-06 13:17:42.539 ERROR 13252 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: null
+	at life.yuanma.community.schedule.HotScheduledTasks.reportCurrentTime(HotScheduledTasks.java:43) ~[classes/:na]
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2020-03-06 13:20:52.900  INFO 8408 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 8408 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 13:20:52.903  INFO 8408 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 13:20:53.021  INFO 8408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 13:20:53.022  INFO 8408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 13:20:53.114  WARN 8408 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 13:20:56.359  INFO 8408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 13:20:56.376  INFO 8408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 13:20:56.376  INFO 8408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 13:20:56.705  INFO 8408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 13:20:56.705  INFO 8408 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3683 ms
+2020-03-06 13:20:56.775  INFO 8408 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 13:20:57.016  INFO 8408 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 13:20:57.024  INFO 8408 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 13:20:58.042  INFO 8408 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 13:20:58.135  INFO 8408 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 13:20:58.376  INFO 8408 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 13:20:58.676  INFO 8408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 13:20:58.717  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:20:58 CST 2020
+2020-03-06 13:20:58.755  INFO 8408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 13:20:58.759  INFO 8408 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.826 seconds (JVM running for 9.715)
+2020-03-06 13:20:58.802  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:20:58.802  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:20:58.804  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:20:58 CST 2020
+2020-03-06 13:21:08.717  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:21:08 CST 2020
+2020-03-06 13:21:08.719  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:21:08.719  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:21:08.720  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:21:08 CST 2020
+2020-03-06 13:21:18.718  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:21:18 CST 2020
+2020-03-06 13:21:18.719  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:21:18.719  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:21:18.720  INFO 8408 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:21:18 CST 2020
+2020-03-06 13:27:57.739  INFO 11100 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 11100 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 13:27:57.742  INFO 11100 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 13:27:58.248  INFO 11100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 13:27:58.253  INFO 11100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 13:27:58.594  WARN 11100 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 13:28:02.845  INFO 11100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 13:28:02.862  INFO 11100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 13:28:02.863  INFO 11100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 13:28:03.184  INFO 11100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 13:28:03.185  INFO 11100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4929 ms
+2020-03-06 13:28:03.258  INFO 11100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 13:28:03.576  INFO 11100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 13:28:03.585  INFO 11100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 13:28:04.775  INFO 11100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 13:28:04.882  INFO 11100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 13:28:05.141  INFO 11100 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 13:28:05.464  INFO 11100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 13:28:05.514  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:28:05 CST 2020
+2020-03-06 13:28:05.553  INFO 11100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 13:28:05.558  INFO 11100 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 9.099 seconds (JVM running for 13.076)
+2020-03-06 13:28:05.611  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:05.612  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:05.615  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:28:05 CST 2020
+2020-03-06 13:28:15.515  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:28:15 CST 2020
+2020-03-06 13:28:15.526  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:15.527  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:15.529  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:28:15 CST 2020
+2020-03-06 13:28:25.519  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:28:25 CST 2020
+2020-03-06 13:28:25.521  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:25.522  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:25.526  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:28:25 CST 2020
+2020-03-06 13:28:35.514  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:28:35 CST 2020
+2020-03-06 13:28:35.518  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:35.519  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:35.520  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:28:35 CST 2020
+2020-03-06 13:28:45.515  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:28:45 CST 2020
+2020-03-06 13:28:45.516  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:45.517  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:28:45.519  INFO 11100 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:28:45 CST 2020
+2020-03-06 13:53:34.383  INFO 3340 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 3340 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 13:53:34.390  INFO 3340 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 13:53:34.563  INFO 3340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 13:53:34.564  INFO 3340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 13:53:34.894  WARN 3340 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 13:53:39.430  INFO 3340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 13:53:39.469  INFO 3340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 13:53:39.471  INFO 3340 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 13:53:40.176  INFO 3340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 13:53:40.177  INFO 3340 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5613 ms
+2020-03-06 13:53:40.339  INFO 3340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 13:53:40.892  INFO 3340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 13:53:40.907  INFO 3340 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 13:53:42.897  INFO 3340 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 13:53:43.056  INFO 3340 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 13:53:43.451  INFO 3340 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 13:53:43.962  INFO 3340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 13:53:44.013  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:53:44 CST 2020
+2020-03-06 13:53:44.066  INFO 3340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 13:53:44.071  INFO 3340 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 11.207 seconds (JVM running for 15.421)
+2020-03-06 13:53:44.120  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:53:44.121  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:53:44.123  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:53:44 CST 2020
+2020-03-06 13:53:54.012  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:53:54 CST 2020
+2020-03-06 13:53:54.014  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:53:54.014  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:53:54.015  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:53:54 CST 2020
+2020-03-06 13:54:04.013  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:54:04 CST 2020
+2020-03-06 13:54:04.017  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:54:04.018  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:54:04.019  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:54:04 CST 2020
+2020-03-06 13:54:14.011  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:54:14 CST 2020
+2020-03-06 13:54:14.012  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:54:14.012  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:54:14.013  INFO 3340 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:54:14 CST 2020
+2020-03-06 13:57:35.016  INFO 2640 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 2640 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 13:57:35.018  INFO 2640 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 13:57:35.254  INFO 2640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 13:57:35.254  INFO 2640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 13:57:35.367  WARN 2640 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 13:57:40.013  INFO 2640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 13:57:40.050  INFO 2640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 13:57:40.051  INFO 2640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 13:57:40.714  INFO 2640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 13:57:40.714  INFO 2640 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5459 ms
+2020-03-06 13:57:40.853  INFO 2640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 13:57:41.293  INFO 2640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 13:57:41.302  INFO 2640 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 13:57:42.374  INFO 2640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 13:57:42.487  INFO 2640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 13:57:42.745  INFO 2640 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 13:57:43.442  INFO 2640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 13:57:43.760  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:57:43 CST 2020
+2020-03-06 13:57:43.829  INFO 2640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 13:57:43.840  INFO 2640 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 10.07 seconds (JVM running for 14.361)
+2020-03-06 13:57:44.120  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:57:44.120  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:57:44.124  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:57:44 CST 2020
+2020-03-06 13:57:53.654  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:57:53 CST 2020
+2020-03-06 13:57:53.666  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:57:53.668  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:57:53.670  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:57:53 CST 2020
+2020-03-06 13:58:03.654  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 13:58:03 CST 2020
+2020-03-06 13:58:03.657  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:58:03.657  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 13:58:03.658  INFO 2640 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 13:58:03 CST 2020
+2020-03-06 14:00:44.034  INFO 1860 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 1860 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 14:00:44.036  INFO 1860 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 14:00:44.172  INFO 1860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 14:00:44.173  INFO 1860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 14:00:44.420  WARN 1860 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 14:00:46.483  INFO 1860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 14:00:46.495  INFO 1860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 14:00:46.495  INFO 1860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 14:00:46.809  INFO 1860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 14:00:46.810  INFO 1860 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2637 ms
+2020-03-06 14:00:46.886  INFO 1860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 14:00:47.115  INFO 1860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 14:00:47.122  INFO 1860 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 14:00:48.204  INFO 1860 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 14:00:48.310  INFO 1860 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 14:00:48.555  INFO 1860 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 14:00:48.874  INFO 1860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 14:00:48.923  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:00:48 CST 2020
+2020-03-06 14:00:48.963  INFO 1860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 14:00:48.970  INFO 1860 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 5.834 seconds (JVM running for 8.342)
+2020-03-06 14:00:49.016  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:00:49.016  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:00:49.019  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:00:49 CST 2020
+2020-03-06 14:00:58.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:00:58 CST 2020
+2020-03-06 14:00:58.926  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:00:58.926  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:00:58.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:00:58 CST 2020
+2020-03-06 14:01:08.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:01:08 CST 2020
+2020-03-06 14:01:08.925  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:08.925  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:08.926  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:01:08 CST 2020
+2020-03-06 14:01:18.923  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:01:18 CST 2020
+2020-03-06 14:01:18.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:18.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:18.925  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:01:18 CST 2020
+2020-03-06 14:01:28.923  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:01:28 CST 2020
+2020-03-06 14:01:28.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:28.925  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:28.926  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:01:28 CST 2020
+2020-03-06 14:01:38.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:01:38 CST 2020
+2020-03-06 14:01:38.925  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:38.926  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:38.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:01:38 CST 2020
+2020-03-06 14:01:48.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:01:48 CST 2020
+2020-03-06 14:01:48.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:48.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:48.928  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:01:48 CST 2020
+2020-03-06 14:01:58.923  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:01:58 CST 2020
+2020-03-06 14:01:58.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:58.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:01:58.928  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:01:58 CST 2020
+2020-03-06 14:02:08.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:02:08 CST 2020
+2020-03-06 14:02:08.925  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:08.926  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:08.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:02:08 CST 2020
+2020-03-06 14:02:18.924  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:02:18 CST 2020
+2020-03-06 14:02:18.925  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:18.926  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:18.927  INFO 1860 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:02:18 CST 2020
+2020-03-06 14:02:41.314  INFO 14092 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 14092 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 14:02:41.316  INFO 14092 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 14:02:41.396  INFO 14092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 14:02:41.396  INFO 14092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 14:02:41.439  WARN 14092 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 14:02:43.486  INFO 14092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 14:02:43.497  INFO 14092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 14:02:43.498  INFO 14092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 14:02:43.828  INFO 14092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 14:02:43.828  INFO 14092 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2432 ms
+2020-03-06 14:02:43.897  INFO 14092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 14:02:44.132  INFO 14092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 14:02:44.142  INFO 14092 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 14:02:45.117  INFO 14092 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 14:02:45.238  INFO 14092 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 14:02:45.527  INFO 14092 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 14:02:45.884  INFO 14092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 14:02:45.935  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:02:45 CST 2020
+2020-03-06 14:02:45.975  INFO 14092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 14:02:45.979  INFO 14092 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 5.566 seconds (JVM running for 8.604)
+2020-03-06 14:02:46.015  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:46.016  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:46.019  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:02:46 CST 2020
+2020-03-06 14:02:55.934  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:02:55 CST 2020
+2020-03-06 14:02:55.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:55.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:02:55.938  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:02:55 CST 2020
+2020-03-06 14:03:05.522  INFO 14092 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 14:03:05.522  INFO 14092 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 14:03:05.533  INFO 14092 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-06 14:03:05.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:03:05 CST 2020
+2020-03-06 14:03:05.939  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:05.939  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:05.940  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:03:05 CST 2020
+2020-03-06 14:03:15.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:03:15 CST 2020
+2020-03-06 14:03:15.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:15.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:15.939  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:03:15 CST 2020
+2020-03-06 14:03:25.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:03:25 CST 2020
+2020-03-06 14:03:25.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:25.938  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:25.939  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:03:25 CST 2020
+2020-03-06 14:03:35.935  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:03:35 CST 2020
+2020-03-06 14:03:35.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:35.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:35.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:03:35 CST 2020
+2020-03-06 14:03:45.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:03:45 CST 2020
+2020-03-06 14:03:45.939  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:45.939  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:45.940  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:03:45 CST 2020
+2020-03-06 14:03:55.934  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:03:55 CST 2020
+2020-03-06 14:03:55.935  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:55.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:03:55.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:03:55 CST 2020
+2020-03-06 14:04:05.935  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:04:05 CST 2020
+2020-03-06 14:04:05.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:04:05.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:04:05.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:04:05 CST 2020
+2020-03-06 14:04:15.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:04:15 CST 2020
+2020-03-06 14:04:15.938  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:04:15.938  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:04:15.939  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:04:15 CST 2020
+2020-03-06 14:04:25.935  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:04:25 CST 2020
+2020-03-06 14:04:25.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:04:25.936  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:04:25.937  INFO 14092 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:04:25 CST 2020
+2020-03-06 14:05:34.396  INFO 13908 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 13908 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 14:05:34.409  INFO 13908 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 14:05:34.510  INFO 13908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 14:05:34.510  INFO 13908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 14:05:34.776  WARN 13908 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 14:05:37.103  INFO 13908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 14:05:37.115  INFO 13908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 14:05:37.116  INFO 13908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 14:05:37.413  INFO 13908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 14:05:37.413  INFO 13908 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2903 ms
+2020-03-06 14:05:37.478  INFO 13908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 14:05:37.736  INFO 13908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 14:05:37.744  INFO 13908 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 14:05:38.785  INFO 13908 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 14:05:38.873  INFO 13908 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 14:05:39.092  INFO 13908 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 14:05:39.399  INFO 13908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 14:05:39.444  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:05:39 CST 2020
+2020-03-06 14:05:39.484  INFO 13908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 14:05:39.488  INFO 13908 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.067 seconds (JVM running for 8.795)
+2020-03-06 14:05:39.525  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:05:39.526  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:05:39.529  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:05:39 CST 2020
+2020-03-06 14:05:49.445  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:05:49 CST 2020
+2020-03-06 14:05:49.446  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:05:49.447  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:05:49.448  INFO 13908 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:05:49 CST 2020
+2020-03-06 14:06:33.877  INFO 5368 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 5368 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 14:06:33.881  INFO 5368 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 14:06:34.145  INFO 5368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 14:06:34.145  INFO 5368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 14:06:34.961  WARN 5368 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 14:06:36.665  INFO 5368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 14:06:36.681  INFO 5368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 14:06:36.682  INFO 5368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 14:06:36.978  INFO 5368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 14:06:36.979  INFO 5368 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2833 ms
+2020-03-06 14:06:37.045  INFO 5368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 14:06:37.279  INFO 5368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 14:06:37.290  INFO 5368 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 14:06:38.327  INFO 5368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 14:06:38.411  INFO 5368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 14:06:38.619  INFO 5368 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 14:06:38.962  INFO 5368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 14:06:39.007  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:06:39 CST 2020
+2020-03-06 14:06:39.048  INFO 5368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 14:06:39.055  INFO 5368 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.008 seconds (JVM running for 8.792)
+2020-03-06 14:06:39.102  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:06:39.102  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:06:39.105  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:06:39 CST 2020
+2020-03-06 14:06:48.400  INFO 5368 --- [http-nio-80-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 14:06:48.400  INFO 5368 --- [http-nio-80-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 14:06:48.411  INFO 5368 --- [http-nio-80-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-06 14:06:49.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:06:49 CST 2020
+2020-03-06 14:06:49.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:06:49.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:06:49.011  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:06:49 CST 2020
+2020-03-06 14:06:59.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:06:59 CST 2020
+2020-03-06 14:06:59.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:06:59.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:06:59.011  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:06:59 CST 2020
+2020-03-06 14:07:09.007  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:07:09 CST 2020
+2020-03-06 14:07:09.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:09.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:09.013  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:07:09 CST 2020
+2020-03-06 14:07:19.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:07:19 CST 2020
+2020-03-06 14:07:19.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:19.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:19.011  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:07:19 CST 2020
+2020-03-06 14:07:29.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:07:29 CST 2020
+2020-03-06 14:07:29.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:29.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:29.011  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:07:29 CST 2020
+2020-03-06 14:07:39.007  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:07:39 CST 2020
+2020-03-06 14:07:39.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:39.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:39.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:07:39 CST 2020
+2020-03-06 14:07:49.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:07:49 CST 2020
+2020-03-06 14:07:49.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:49.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:49.012  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:07:49 CST 2020
+2020-03-06 14:07:59.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:07:59 CST 2020
+2020-03-06 14:07:59.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:59.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:07:59.011  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:07:59 CST 2020
+2020-03-06 14:08:09.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:08:09 CST 2020
+2020-03-06 14:08:09.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:08:09.011  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:08:09.014  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:08:09 CST 2020
+2020-03-06 14:08:19.007  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:08:19 CST 2020
+2020-03-06 14:08:19.008  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:08:19.009  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:08:19.010  INFO 5368 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:08:19 CST 2020
+2020-03-06 14:10:45.610  INFO 10792 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 10792 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 14:10:45.618  INFO 10792 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 14:10:45.862  INFO 10792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 14:10:45.863  INFO 10792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 14:10:46.045  WARN 10792 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 14:10:51.900  INFO 10792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 14:10:51.921  INFO 10792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 14:10:51.922  INFO 10792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 14:10:52.475  INFO 10792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 14:10:52.476  INFO 10792 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6613 ms
+2020-03-06 14:10:52.604  INFO 10792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 14:10:53.084  INFO 10792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 14:10:53.100  INFO 10792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 14:10:55.032  INFO 10792 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 14:10:55.227  INFO 10792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 14:10:55.654  INFO 10792 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 14:10:56.135  INFO 10792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 14:10:56.197  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:10:56 CST 2020
+2020-03-06 14:10:56.249  INFO 10792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 14:10:56.259  INFO 10792 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 12.33 seconds (JVM running for 17.248)
+2020-03-06 14:10:56.322  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:10:56.322  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:10:56.328  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:10:56 CST 2020
+2020-03-06 14:11:06.205  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:11:06 CST 2020
+2020-03-06 14:11:06.207  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:11:06.207  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:11:06.210  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:11:06 CST 2020
+2020-03-06 14:11:16.197  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 14:11:16 CST 2020
+2020-03-06 14:11:16.198  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:11:16.199  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 14:11:16.202  INFO 10792 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 14:11:16 CST 2020
+2020-03-06 16:16:44.990  INFO 6380 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 6380 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 16:16:44.994  INFO 6380 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 16:16:45.156  INFO 6380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 16:16:45.156  INFO 6380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 16:16:45.409  WARN 6380 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 16:16:49.747  INFO 6380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 16:16:49.764  INFO 6380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 16:16:49.764  INFO 6380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 16:16:50.258  INFO 6380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 16:16:50.258  INFO 6380 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5100 ms
+2020-03-06 16:16:50.360  INFO 6380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 16:16:50.899  INFO 6380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 16:16:50.919  INFO 6380 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 16:16:52.511  INFO 6380 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:16:52.969  INFO 6380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 16:16:53.428  INFO 6380 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 16:16:53.942  INFO 6380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 16:16:53.993  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:16:53 CST 2020
+2020-03-06 16:16:54.058  INFO 6380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 16:16:54.065  INFO 6380 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 10.281 seconds (JVM running for 14.438)
+2020-03-06 16:16:54.130  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:16:54.130  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:16:54.133  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:16:54 CST 2020
+2020-03-06 16:16:58.067  INFO 6380 --- [http-nio-80-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 16:16:58.068  INFO 6380 --- [http-nio-80-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 16:16:58.076  INFO 6380 --- [http-nio-80-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-03-06 16:17:03.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:17:03 CST 2020
+2020-03-06 16:17:03.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:03.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:03.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:17:03 CST 2020
+2020-03-06 16:17:13.994  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:17:13 CST 2020
+2020-03-06 16:17:13.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:13.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:13.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:17:13 CST 2020
+2020-03-06 16:17:23.994  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:17:23 CST 2020
+2020-03-06 16:17:23.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:23.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:23.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:17:23 CST 2020
+2020-03-06 16:17:33.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:17:33 CST 2020
+2020-03-06 16:17:33.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:33.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:33.998  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:17:33 CST 2020
+2020-03-06 16:17:43.994  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:17:43 CST 2020
+2020-03-06 16:17:43.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:43.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:43.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:17:43 CST 2020
+2020-03-06 16:17:53.994  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:17:53 CST 2020
+2020-03-06 16:17:53.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:53.998  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:17:53.998  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:17:53 CST 2020
+2020-03-06 16:18:03.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:18:03 CST 2020
+2020-03-06 16:18:03.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:03.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:03.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:18:03 CST 2020
+2020-03-06 16:18:13.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:18:13 CST 2020
+2020-03-06 16:18:13.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:13.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:13.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:18:13 CST 2020
+2020-03-06 16:18:23.994  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:18:23 CST 2020
+2020-03-06 16:18:23.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:23.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:23.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:18:23 CST 2020
+2020-03-06 16:18:33.994  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:18:33 CST 2020
+2020-03-06 16:18:33.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:33.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:33.998  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:18:33 CST 2020
+2020-03-06 16:18:43.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:18:43 CST 2020
+2020-03-06 16:18:43.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:43.997  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:43.998  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:18:43 CST 2020
+2020-03-06 16:18:53.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:18:53 CST 2020
+2020-03-06 16:18:53.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:53.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:18:53.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:18:53 CST 2020
+2020-03-06 16:19:03.995  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:19:03 CST 2020
+2020-03-06 16:19:03.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:19:03.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:19:03.996  INFO 6380 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:19:03 CST 2020
+2020-03-06 16:21:00.195  INFO 3052 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 3052 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 16:21:00.198  INFO 3052 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 16:21:00.327  INFO 3052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 16:21:00.328  INFO 3052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 16:21:00.510  WARN 3052 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 16:21:03.008  INFO 3052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 16:21:03.025  INFO 3052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 16:21:03.025  INFO 3052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 16:21:03.315  INFO 3052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 16:21:03.315  INFO 3052 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2986 ms
+2020-03-06 16:21:03.380  INFO 3052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 16:21:03.711  INFO 3052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 16:21:03.724  INFO 3052 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 16:21:04.772  INFO 3052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:21:04.865  INFO 3052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 16:21:05.078  INFO 3052 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 16:21:05.352  INFO 3052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 16:21:05.395  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:21:05 CST 2020
+2020-03-06 16:21:05.443  INFO 3052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 16:21:05.450  INFO 3052 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.199 seconds (JVM running for 10.131)
+2020-03-06 16:21:05.492  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:05.493  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:05.495  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:21:05 CST 2020
+2020-03-06 16:21:10.382  INFO 3052 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 16:21:10.382  INFO 3052 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 16:21:10.395  INFO 3052 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-03-06 16:21:17.175  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:21:17 CST 2020
+2020-03-06 16:21:39.751  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:39.751  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:39.752  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:21:39 CST 2020
+2020-03-06 16:21:40.426  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:21:40 CST 2020
+2020-03-06 16:21:40.435  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:40.436  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:40.436  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:21:40 CST 2020
+2020-03-06 16:21:40.436  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:21:40 CST 2020
+2020-03-06 16:21:40.438  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:40.438  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:21:40.439  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:21:40 CST 2020
+2020-03-06 16:22:27.258  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.261  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.261  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.262  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.263  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.264  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.265  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.265  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.265  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.267  WARN 3052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s607ms315µs900ns).
+2020-03-06 16:22:27.271  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.272  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.272  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.272  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.276  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.277  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.277  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.277  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.280  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.281  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:22:27.281  INFO 3052 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:22:27 CST 2020
+2020-03-06 16:22:27.570  INFO 3052 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-03-06 16:22:27.573  INFO 3052 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:22:27.576  INFO 3052 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-06 16:22:27.705  INFO 3052 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-06 16:28:33.498  INFO 10820 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 10820 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 16:28:33.500  INFO 10820 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 16:28:33.592  INFO 10820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 16:28:33.593  INFO 10820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 16:28:33.665  WARN 10820 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 16:28:36.035  INFO 10820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 16:28:36.046  INFO 10820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 16:28:36.046  INFO 10820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 16:28:36.370  INFO 10820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 16:28:36.370  INFO 10820 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2776 ms
+2020-03-06 16:28:36.454  INFO 10820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 16:28:36.726  INFO 10820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 16:28:36.734  INFO 10820 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 16:28:37.952  INFO 10820 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:28:38.065  INFO 10820 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 16:28:38.320  INFO 10820 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 16:28:38.608  INFO 10820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 16:28:38.651  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:28:38 CST 2020
+2020-03-06 16:28:38.710  INFO 10820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 16:28:38.721  INFO 10820 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 6.109 seconds (JVM running for 9.117)
+2020-03-06 16:28:38.754  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:28:38.754  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:28:38.757  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:28:38 CST 2020
+2020-03-06 16:28:48.652  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:28:48 CST 2020
+2020-03-06 16:28:48.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:28:48.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:28:48.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:28:48 CST 2020
+2020-03-06 16:28:58.652  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:28:58 CST 2020
+2020-03-06 16:28:58.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:28:58.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:28:58.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:28:58 CST 2020
+2020-03-06 16:29:08.651  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:29:08 CST 2020
+2020-03-06 16:29:08.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:08.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:08.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:29:08 CST 2020
+2020-03-06 16:29:11.698  INFO 10820 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 16:29:11.698  INFO 10820 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 16:29:11.708  INFO 10820 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-03-06 16:29:18.652  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:29:18 CST 2020
+2020-03-06 16:29:18.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:18.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:18.654  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:29:18 CST 2020
+2020-03-06 16:29:28.651  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:29:28 CST 2020
+2020-03-06 16:29:28.652  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:28.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:28.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:29:28 CST 2020
+2020-03-06 16:29:38.651  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:29:38 CST 2020
+2020-03-06 16:29:38.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:38.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:38.656  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:29:38 CST 2020
+2020-03-06 16:29:48.652  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:29:48 CST 2020
+2020-03-06 16:29:48.652  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:48.652  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:29:48.653  INFO 10820 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:29:48 CST 2020
+2020-03-06 16:39:39.315  INFO 8300 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 8300 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 16:39:39.318  INFO 8300 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 16:39:39.502  INFO 8300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 16:39:39.502  INFO 8300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 16:39:39.550  WARN 8300 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 16:39:43.151  INFO 8300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 16:39:43.162  INFO 8300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 16:39:43.162  INFO 8300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 16:39:43.597  INFO 8300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 16:39:43.597  INFO 8300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4085 ms
+2020-03-06 16:39:43.757  INFO 8300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 16:39:44.241  INFO 8300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 16:39:44.248  INFO 8300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 16:39:45.512  INFO 8300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:39:45.613  INFO 8300 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 16:39:45.937  INFO 8300 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 16:39:46.254  INFO 8300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 16:39:46.295  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:39:46 CST 2020
+2020-03-06 16:39:46.343  INFO 8300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 16:39:46.348  INFO 8300 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 8.412 seconds (JVM running for 12.284)
+2020-03-06 16:39:46.425  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:39:46.426  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:39:46.429  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:39:46 CST 2020
+2020-03-06 16:39:56.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:39:56 CST 2020
+2020-03-06 16:39:56.298  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:39:56.299  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:39:56.299  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:39:56 CST 2020
+2020-03-06 16:40:02.759  INFO 8300 --- [http-nio-80-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 16:40:02.759  INFO 8300 --- [http-nio-80-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 16:40:02.771  INFO 8300 --- [http-nio-80-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-06 16:40:06.295  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:40:06 CST 2020
+2020-03-06 16:40:06.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:40:06.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:40:06.298  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:40:06 CST 2020
+2020-03-06 16:40:16.296  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:40:16 CST 2020
+2020-03-06 16:40:16.296  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:40:16.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:40:16.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:40:16 CST 2020
+2020-03-06 16:40:26.296  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:40:26 CST 2020
+2020-03-06 16:40:26.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:40:26.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:40:26.297  INFO 8300 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:40:26 CST 2020
+2020-03-06 16:41:53.248  INFO 8752 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 8752 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 16:41:53.251  INFO 8752 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 16:41:53.357  WARN 8752 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 16:41:53.361  INFO 8752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 16:41:53.361  INFO 8752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 16:41:56.190  INFO 8752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 16:41:56.205  INFO 8752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 16:41:56.206  INFO 8752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 16:41:56.532  INFO 8752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 16:41:56.532  INFO 8752 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3171 ms
+2020-03-06 16:41:56.626  INFO 8752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 16:41:56.878  INFO 8752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 16:41:56.888  INFO 8752 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 16:41:58.270  INFO 8752 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:41:58.482  INFO 8752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 16:41:58.814  INFO 8752 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 16:41:59.197  INFO 8752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 16:41:59.257  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:41:59 CST 2020
+2020-03-06 16:41:59.311  INFO 8752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 16:41:59.317  INFO 8752 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 7.355 seconds (JVM running for 11.321)
+2020-03-06 16:41:59.370  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:41:59.371  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:41:59.374  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:41:59 CST 2020
+2020-03-06 16:42:09.251  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:42:09 CST 2020
+2020-03-06 16:42:09.256  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:09.257  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:09.258  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:42:09 CST 2020
+2020-03-06 16:42:19.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:42:19 CST 2020
+2020-03-06 16:42:19.254  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:19.255  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:19.255  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:42:19 CST 2020
+2020-03-06 16:42:22.380  INFO 8752 --- [http-nio-80-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 16:42:22.380  INFO 8752 --- [http-nio-80-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 16:42:22.390  INFO 8752 --- [http-nio-80-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-06 16:42:29.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:42:29 CST 2020
+2020-03-06 16:42:29.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:29.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:29.254  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:42:29 CST 2020
+2020-03-06 16:42:39.251  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:42:39 CST 2020
+2020-03-06 16:42:39.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:39.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:39.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:42:39 CST 2020
+2020-03-06 16:42:49.251  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:42:49 CST 2020
+2020-03-06 16:42:49.257  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:49.257  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:49.258  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:42:49 CST 2020
+2020-03-06 16:42:59.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:42:59 CST 2020
+2020-03-06 16:42:59.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:59.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:42:59.254  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:42:59 CST 2020
+2020-03-06 16:43:09.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:43:09 CST 2020
+2020-03-06 16:43:09.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:09.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:09.253  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:43:09 CST 2020
+2020-03-06 16:43:19.251  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:43:19 CST 2020
+2020-03-06 16:43:19.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:19.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:19.252  INFO 8752 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:43:19 CST 2020
+2020-03-06 16:43:36.759  INFO 10332 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 10332 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 16:43:36.761  INFO 10332 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 16:43:36.977  INFO 10332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 16:43:36.978  INFO 10332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 16:43:37.203  WARN 10332 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 16:43:40.905  INFO 10332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 16:43:40.929  INFO 10332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 16:43:40.931  INFO 10332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 16:43:41.346  INFO 10332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 16:43:41.347  INFO 10332 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4369 ms
+2020-03-06 16:43:41.431  INFO 10332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 16:43:41.803  INFO 10332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 16:43:41.817  INFO 10332 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 16:43:43.164  INFO 10332 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:43:43.279  INFO 10332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 16:43:43.521  INFO 10332 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 16:43:43.856  INFO 10332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 16:43:43.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:43:43 CST 2020
+2020-03-06 16:43:43.968  INFO 10332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 16:43:43.978  INFO 10332 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 8.469 seconds (JVM running for 11.796)
+2020-03-06 16:43:44.022  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:44.023  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:44.025  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:43:44 CST 2020
+2020-03-06 16:43:53.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:43:53 CST 2020
+2020-03-06 16:43:53.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:53.918  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:43:53.918  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:43:53 CST 2020
+2020-03-06 16:44:03.913  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:44:03 CST 2020
+2020-03-06 16:44:03.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:03.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:03.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:44:03 CST 2020
+2020-03-06 16:44:13.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:44:13 CST 2020
+2020-03-06 16:44:13.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:13.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:13.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:44:13 CST 2020
+2020-03-06 16:44:22.302  INFO 10332 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 16:44:22.302  INFO 10332 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 16:44:22.312  INFO 10332 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-03-06 16:44:23.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:44:23 CST 2020
+2020-03-06 16:44:23.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:23.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:23.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:44:23 CST 2020
+2020-03-06 16:44:33.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:44:33 CST 2020
+2020-03-06 16:44:33.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:33.918  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:33.918  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:44:33 CST 2020
+2020-03-06 16:44:43.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:44:43 CST 2020
+2020-03-06 16:44:43.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:43.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:43.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:44:43 CST 2020
+2020-03-06 16:44:53.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:44:53 CST 2020
+2020-03-06 16:44:53.919  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:53.921  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:44:53.922  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:44:53 CST 2020
+2020-03-06 16:45:03.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:45:03 CST 2020
+2020-03-06 16:45:03.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:03.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:03.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:45:03 CST 2020
+2020-03-06 16:45:13.913  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:45:13 CST 2020
+2020-03-06 16:45:13.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:13.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:13.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:45:13 CST 2020
+2020-03-06 16:45:23.913  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:45:23 CST 2020
+2020-03-06 16:45:23.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:23.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:23.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:45:23 CST 2020
+2020-03-06 16:45:33.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:45:33 CST 2020
+2020-03-06 16:45:33.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:33.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:33.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:45:33 CST 2020
+2020-03-06 16:45:43.913  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:45:43 CST 2020
+2020-03-06 16:45:43.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:43.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:43.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:45:43 CST 2020
+2020-03-06 16:45:53.913  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:45:53 CST 2020
+2020-03-06 16:45:53.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:53.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:45:53.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:45:53 CST 2020
+2020-03-06 16:46:03.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:46:03 CST 2020
+2020-03-06 16:46:03.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:03.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:03.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:46:03 CST 2020
+2020-03-06 16:46:13.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:46:13 CST 2020
+2020-03-06 16:46:13.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:13.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:13.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:46:13 CST 2020
+2020-03-06 16:46:23.913  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:46:23 CST 2020
+2020-03-06 16:46:23.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:23.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:23.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:46:23 CST 2020
+2020-03-06 16:46:33.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:46:33 CST 2020
+2020-03-06 16:46:33.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:33.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:33.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:46:33 CST 2020
+2020-03-06 16:46:43.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:46:43 CST 2020
+2020-03-06 16:46:43.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:43.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:43.918  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:46:43 CST 2020
+2020-03-06 16:46:53.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:46:53 CST 2020
+2020-03-06 16:46:53.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:53.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:46:53.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:46:53 CST 2020
+2020-03-06 16:47:03.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:47:03 CST 2020
+2020-03-06 16:47:03.917  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:03.918  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:03.918  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:47:03 CST 2020
+2020-03-06 16:47:13.923  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:47:13 CST 2020
+2020-03-06 16:47:13.933  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:13.933  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:13.934  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:47:13 CST 2020
+2020-03-06 16:47:23.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:47:23 CST 2020
+2020-03-06 16:47:23.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:23.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:23.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:47:23 CST 2020
+2020-03-06 16:47:33.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:47:33 CST 2020
+2020-03-06 16:47:33.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:33.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:33.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:47:33 CST 2020
+2020-03-06 16:47:43.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:47:43 CST 2020
+2020-03-06 16:47:43.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:43.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:43.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:47:43 CST 2020
+2020-03-06 16:47:53.913  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:47:53 CST 2020
+2020-03-06 16:47:53.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:53.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:47:53.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:47:53 CST 2020
+2020-03-06 16:48:03.914  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:48:03 CST 2020
+2020-03-06 16:48:03.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:48:03.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:48:03.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:48:03 CST 2020
+2020-03-06 16:48:13.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:48:13 CST 2020
+2020-03-06 16:48:13.915  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:48:13.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:48:13.916  INFO 10332 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:48:13 CST 2020
+2020-03-06 16:50:03.245  INFO 224 --- [restartedMain] l.yuanma.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-PNM6FJF with PID 224 (F:\graduateProjects\springBoot\target\classes started by bboy in F:\graduateProjects\springBoot)
+2020-03-06 16:50:03.259  INFO 224 --- [restartedMain] l.yuanma.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-03-06 16:50:03.390  INFO 224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-06 16:50:03.392  INFO 224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-06 16:50:03.680  WARN 224 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-06 16:50:05.657  INFO 224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-06 16:50:05.669  INFO 224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-06 16:50:05.669  INFO 224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-06 16:50:05.969  INFO 224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-06 16:50:05.969  INFO 224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2577 ms
+2020-03-06 16:50:06.018  INFO 224 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-06 16:50:06.227  INFO 224 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-06 16:50:06.241  INFO 224 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community1'
+2020-03-06 16:50:07.131  INFO 224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-06 16:50:07.238  INFO 224 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-06 16:50:07.456  INFO 224 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-06 16:50:07.716  INFO 224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-06 16:50:07.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:50:07 CST 2020
+2020-03-06 16:50:07.786  INFO 224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-06 16:50:07.793  INFO 224 --- [restartedMain] l.yuanma.community.CommunityApplication  : Started CommunityApplication in 5.508 seconds (JVM running for 7.9)
+2020-03-06 16:50:07.828  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:07.828  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:07.830  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:50:07 CST 2020
+2020-03-06 16:50:15.001  INFO 224 --- [http-nio-80-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-06 16:50:15.002  INFO 224 --- [http-nio-80-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-06 16:50:15.007  INFO 224 --- [http-nio-80-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-03-06 16:50:17.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:50:17 CST 2020
+2020-03-06 16:50:17.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:17.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:17.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:50:17 CST 2020
+2020-03-06 16:50:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:50:27 CST 2020
+2020-03-06 16:50:27.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:27.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:27.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:50:27 CST 2020
+2020-03-06 16:50:37.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:50:37 CST 2020
+2020-03-06 16:50:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:37.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:50:37 CST 2020
+2020-03-06 16:50:47.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:50:47 CST 2020
+2020-03-06 16:50:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:50:47 CST 2020
+2020-03-06 16:50:57.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:50:57 CST 2020
+2020-03-06 16:50:57.753  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:57.754  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:50:57.754  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:50:57 CST 2020
+2020-03-06 16:51:07.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:51:07 CST 2020
+2020-03-06 16:51:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:51:07 CST 2020
+2020-03-06 16:51:17.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:51:17 CST 2020
+2020-03-06 16:51:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:51:17 CST 2020
+2020-03-06 16:51:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:51:27 CST 2020
+2020-03-06 16:51:27.755  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:27.756  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:27.758  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:51:27 CST 2020
+2020-03-06 16:51:37.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:51:37 CST 2020
+2020-03-06 16:51:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:51:37 CST 2020
+2020-03-06 16:51:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:51:47 CST 2020
+2020-03-06 16:51:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:51:47 CST 2020
+2020-03-06 16:51:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:51:57 CST 2020
+2020-03-06 16:51:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:51:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:51:57 CST 2020
+2020-03-06 16:52:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:52:07 CST 2020
+2020-03-06 16:52:07.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:07.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:07.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:52:07 CST 2020
+2020-03-06 16:52:17.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:52:17 CST 2020
+2020-03-06 16:52:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:52:17 CST 2020
+2020-03-06 16:52:27.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:52:27 CST 2020
+2020-03-06 16:52:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:52:27 CST 2020
+2020-03-06 16:52:37.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:52:37 CST 2020
+2020-03-06 16:52:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:37.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:52:37 CST 2020
+2020-03-06 16:52:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:52:47 CST 2020
+2020-03-06 16:52:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:52:47 CST 2020
+2020-03-06 16:52:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:52:57 CST 2020
+2020-03-06 16:52:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:52:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:52:57 CST 2020
+2020-03-06 16:53:07.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:53:07 CST 2020
+2020-03-06 16:53:07.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:07.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:07.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:53:07 CST 2020
+2020-03-06 16:53:17.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:53:17 CST 2020
+2020-03-06 16:53:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:53:17 CST 2020
+2020-03-06 16:53:27.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:53:27 CST 2020
+2020-03-06 16:53:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:53:27 CST 2020
+2020-03-06 16:53:37.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:53:37 CST 2020
+2020-03-06 16:53:37.752  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:37.753  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:37.755  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:53:37 CST 2020
+2020-03-06 16:53:47.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:53:47 CST 2020
+2020-03-06 16:53:47.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:47.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:47.752  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:53:47 CST 2020
+2020-03-06 16:53:57.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:53:57 CST 2020
+2020-03-06 16:53:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:53:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:53:57 CST 2020
+2020-03-06 16:54:07.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:54:07 CST 2020
+2020-03-06 16:54:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:54:07 CST 2020
+2020-03-06 16:54:17.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:54:17 CST 2020
+2020-03-06 16:54:17.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:54:17 CST 2020
+2020-03-06 16:54:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:54:27 CST 2020
+2020-03-06 16:54:27.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:27.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:27.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:54:27 CST 2020
+2020-03-06 16:54:37.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:54:37 CST 2020
+2020-03-06 16:54:37.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:37.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:54:37 CST 2020
+2020-03-06 16:54:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:54:47 CST 2020
+2020-03-06 16:54:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:47.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:47.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:54:47 CST 2020
+2020-03-06 16:54:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:54:57 CST 2020
+2020-03-06 16:54:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:54:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:54:57 CST 2020
+2020-03-06 16:55:07.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:55:07 CST 2020
+2020-03-06 16:55:07.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:55:07 CST 2020
+2020-03-06 16:55:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:55:17 CST 2020
+2020-03-06 16:55:17.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:17.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:17.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:55:17 CST 2020
+2020-03-06 16:55:27.746  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:55:27 CST 2020
+2020-03-06 16:55:27.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:27.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:27.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:55:27 CST 2020
+2020-03-06 16:55:37.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:55:37 CST 2020
+2020-03-06 16:55:37.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:37.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:37.751  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:55:37 CST 2020
+2020-03-06 16:55:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:55:47 CST 2020
+2020-03-06 16:55:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:55:47 CST 2020
+2020-03-06 16:55:57.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:55:57 CST 2020
+2020-03-06 16:55:57.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:57.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:55:57.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:55:57 CST 2020
+2020-03-06 16:56:07.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:56:07 CST 2020
+2020-03-06 16:56:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:07.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:56:07 CST 2020
+2020-03-06 16:56:17.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:56:17 CST 2020
+2020-03-06 16:56:17.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:17.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:17.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:56:17 CST 2020
+2020-03-06 16:56:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:56:27 CST 2020
+2020-03-06 16:56:27.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:27.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:27.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:56:27 CST 2020
+2020-03-06 16:56:37.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:56:37 CST 2020
+2020-03-06 16:56:37.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:37.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:37.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:56:37 CST 2020
+2020-03-06 16:56:47.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:56:47 CST 2020
+2020-03-06 16:56:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:47.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:56:47 CST 2020
+2020-03-06 16:56:57.747  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:56:57 CST 2020
+2020-03-06 16:56:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:57.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:56:57.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:56:57 CST 2020
+2020-03-06 16:57:07.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:57:07 CST 2020
+2020-03-06 16:57:07.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:07.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:07.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:57:07 CST 2020
+2020-03-06 16:57:17.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:57:17 CST 2020
+2020-03-06 16:57:17.752  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:17.753  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:17.753  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:57:17 CST 2020
+2020-03-06 16:57:27.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:57:27 CST 2020
+2020-03-06 16:57:27.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:27.749  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:27.750  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:57:27 CST 2020
+2020-03-06 16:57:37.748  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is startFri Mar 06 16:57:37 CST 2020
+2020-03-06 16:57:37.754  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:37.755  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : question
+2020-03-06 16:57:37.755  INFO 224 --- [scheduling-1] l.y.c.schedule.HotScheduledTasks         : The time is stop Fri Mar 06 16:57:37 CST 2020
