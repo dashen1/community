@@ -41,7 +41,7 @@ public class AuthorizeController {
 
     @Value("${github.redirect.uri}")
     private String redirectUri;
-git
+
     @Autowired
     private NotificationService notificationService;
 
