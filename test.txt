@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 hello test!
+=======
+Hello Github!
+
+Modified from github!
+>>>>>>> 020ef925b400f583ddea5fcfaa8bdfe29e6b6978
